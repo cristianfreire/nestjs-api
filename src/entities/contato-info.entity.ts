@@ -12,9 +12,9 @@ export class ContactInfo {
     @OneToOne(() => Employee)
     employee: Employee;
 
-    @Column()
+    @Column({ nullable: true })
     phone: string;
-    
+
     @Column()
     email: string;
 }
