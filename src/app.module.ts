@@ -19,7 +19,6 @@ import { Meeting } from './entities/meeting.entity';
     }),
     TypeOrmModule.forFeature([Employee, ContactInfo, Task, Meeting]),
   ],
-  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule { }
